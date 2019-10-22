@@ -11,8 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 /***
  * 
  * @author Shuo LIANG
+ * @description les apis pour les données
  *
  */
+@RequestMapping("/tra")
+@RestController
+@CrossOrigin
 public class TRADataController {
-
+	
 }
