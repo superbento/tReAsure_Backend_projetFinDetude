@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
+@Service
 public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserDao userDao;
