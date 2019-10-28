@@ -39,10 +39,13 @@ public class UserController {
             JSONObject json = JSONObject.fromObject(obj);
             loginName = json.getString("loginName");
             password = json.getString("password");
+            System.out.println(loginName);
+            System.out.println(password);
         }
         try {
             responseResult=userService.userLogin(req,rep,loginName,password);
         } catch (Exception e) {
+        	System.out.println(e.getMessage());
             throw new RuntimeException("Background management login exception");
         }
         return responseResult;

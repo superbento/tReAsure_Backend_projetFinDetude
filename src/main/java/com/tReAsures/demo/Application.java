@@ -8,7 +8,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
-@MapperScan("com.tReAsures.demo")
+@MapperScan("com.tReAsures.demo.dao")
 @ServletComponentScan
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
